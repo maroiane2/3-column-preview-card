@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Big Shoulders Display', cursive;
+}
+body {
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+}
+.all {
+    width: 1000px;
+    height: 500px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 333px 333px 333px;
+}
+/* sedans */
+.all .sedans {
+    border-radius: 20px 0 0 20px;
+    display: grid;
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+.all .sedans div {
+    color: hsl(31, 77%, 52%);
+}
+/* suvs */
+.all .suvs {
+    display: grid;
+    background-color:  hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
+.all .suvs div {
+    color: hsl(184, 100%, 22%)
+}
+/* luxury */
+.all .luxury {
+    display: grid;
+    background-color:hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border-radius:0 20px 20px 0;
+}
+.all .luxury div {
+    color: hsl(179, 100%, 13%);
+}
+/* alls */
+.all p {
+    color:hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 25px;
+}
+.all .botona{
+    margin-top: 50px;
+    width: 170px;
+    height: 50px;
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 5%;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+}
+.all .botona:active {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: 2px solid #fff;
+}
+.all .mix{
+    padding: 40px;
+}
+@media (50px <= width <= 375px) {
+    .all {
+        height: 1500px;
+        width: 300px;
+        grid-template-rows:repeat( 3 , 500px);
+        grid-template-columns: 300px;
+    }
+    .all .luxury {
+        border-radius:0 0 20px 20px;
+    }
+    .all .sedans {
+        border-radius: 20px 20px 0 0;
+    }
+}
